@@ -1,0 +1,22 @@
+html{
+	font-size:16px;
+}
+
+header{
+	text-align:center;
+ }
+
+#lateral{
+    text-align:center;
+    padding: 50px 100px; 
+}
+	.foto{
+        margin: 10px auto; 
+        width: 400px;
+        display:block;
+    }
+    .galeria{
+        display: inline-block;
+        width: 40px;
+    }
+	
