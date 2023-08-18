@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memes</title>
+    <link rel="stylesheet" href="css/memetyle.css" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+</head>
+<body>
+    <header>
+        <h1>Creador de memes</h1>
+    </header>
+    <section class="row conteiner-fluid" id="todo">
+        <aside id="lateral" class="col-sm-3">
+                <h5>Elija una imagen</h5>
+                <h6>Superheroe</h6>
+                <img src="img/bich.jpg" alt="Muchachon" class="galeria" onclick="fotografia('bich')">
+                <img src="img/spi.jpg" alt="Muchachon" class="galeria" onclick="fotografia('spi')">
+                <img src="img/sup.jpg" alt="Muchachon" class="galeria" onclick="fotografia('sup')">
+                <br>
+                <h6>Animales</h6>
+                <img src="img/dog.jpg" alt="Muchachon" class="galeria" onclick="fotografia('dog')">
+                <img src="img/pex.jpg" alt="Muchachon" class="galeria" onclick="fotografia('pex')">
+                <img src="img/pere.jpg" alt="Muchachon" class="galeria" onclick="fotografia('pere')">
+                <br>
+                <h6>Personas</h6>
+                <img src="img/bb.jpg" alt="Muchachon" class="galeria" onclick="fotografia('bb')">
+                <img src="img/mep.jpg" alt="Muchachon" class="galeria" onclick="fotografia('mep')">
+                <img src="img/descarganeg.jpg" alt="Muchachon" class="galeria" onclick="fotografia('descarganeg')">
+                <br><br>
+                <div id="colorPicker">
+                    <label for="backgroundColor">Escoga un color:</label>
+                    <input type="color" id="backgroundColor" name="colorP" onchange="cambioColor(this.value)">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="textomeme">Texto para Memes:</label>
+                    <input type="text" id="textomeme" name="textomeme" class="form-control" placeholder="Ingrese el texto para el meme">
+                    <br>
+                    <button type="button" onclick="texto()" class="btn btn-primary">Aplicar Texto</button>
+                </div>
+            </select>
+        </aside>  
+        <section id="principal" class="col-sm-9">
+            <article id="imagenes">
+                <img src="img/uno.png" alt="" id="foto" class="foto">
+            </article><br>
+            <div>
+                <p id="texto"></p>
+            </div>
+            <div>
+                <p id="resultadoNombre"></p>
+            </div>
+            </section>
+    </section>
+     <script src="js/baja.js"></script>
+</body>
+</html>
+
